@@ -18,6 +18,7 @@ export const schema = gql`
 
   input UpdateExerciseInput {
     name: String
+    creatorId: String!
   }
 
   type Mutation {
