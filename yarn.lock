@@ -1466,10 +1466,10 @@
     lodash.omitby "^4.6.0"
     merge-graphql-schemas "^1.7.6"
 
-"@redwoodjs/auth@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.7.0.tgz#1b3173679399011743249f52729d94abfd9b9b99"
-  integrity sha512-kbCw+M9BrEuhtkRpB8IvboC4/WxQ+FsVYJMzDQqTTKHJcyxqZdDR+xpI1s47U4bU2RPUxYOlqgVdHNfNAymByA==
+"@redwoodjs/auth@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.8.0.tgz#69b6af5dd6a02081a6d11a6de2fc7d16cc62bd11"
+  integrity sha512-T8+vHWYAsW0CvcN069Ulnj19f3q9hiEmXJPl55kFMlxuB5puu3qaKqJcAKPfaYlOtxxCz7nKZ2zDALSZ4IeEPw==
 
 "@redwoodjs/cli@^0.8.0":
   version "0.8.0"
@@ -1603,10 +1603,10 @@
     findup-sync "^4.0.0"
     toml "^3.0.0"
 
-"@redwoodjs/router@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.7.0.tgz#2619dcff7e9ef4813f1c3b101dac73cae619a371"
-  integrity sha512-UQl1zunoAHA1NdRvmU3Lv9N5nJ/Z/fQWNT+87R1jRl8yNiW7kxggR2m3RheeyfUxZyGaGrT2HJpX5A7we+20uA==
+"@redwoodjs/router@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.8.0.tgz#c6d6372d2cc24f91ef321f593fb77888b17e5513"
+  integrity sha512-Kww6QJ5c5K4ksRFjn7mKMg+pVfmZAg6n1YU4upDWldeP9su/6/6cSlpltOvvMG5iACdpiX5o38U0m6ObeugmNQ==
   dependencies:
     core-js "3.6.4"
 
@@ -1618,24 +1618,6 @@
     "@redwoodjs/internal" "^0.8.0"
     "@redwoodjs/web" "^0.8.0"
     "@testing-library/react" "^10.0.4"
-
-"@redwoodjs/web@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.7.0.tgz#dfacca767db1e70df1d3e84288a74989aefff63e"
-  integrity sha512-6fy/9xdZlNIrWZtjDTdZoOX40OSn8eiE7bvhrCgjgzoAAu7vZBSeujkBFTS+Wg+9pblQHN6IQfyM+EqRDJgShw==
-  dependencies:
-    "@apollo/react-components" "^3.1.3"
-    "@apollo/react-hooks" "^3.1.3"
-    "@types/react" "16.9.34"
-    apollo-boost "0.4.7"
-    apollo-cache "^1.3.4"
-    apollo-client "^2.6.8"
-    apollo-link "^1.2.13"
-    apollo-utilities "^1.3.3"
-    core-js "3.6.4"
-    graphql "^14.6.0"
-    proptypes "^1.1.0"
-    react-hook-form "^5.1.3"
 
 "@redwoodjs/web@^0.8.0":
   version "0.8.0"
@@ -2080,14 +2062,6 @@
   version "16.9.35"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.35.tgz#a0830d172e8aadd9bd41709ba2281a3124bbd368"
   integrity sha512-q0n0SsWcGc8nDqH2GJfWQWUOmZSJhXV64CjVN5SvcNti3TdEaA3AH0D8DwNmMdzjMAC/78tB8nAZIlV8yTz+zQ==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/react@16.9.34":
-  version "16.9.34"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
-  integrity sha512-8AJlYMOfPe1KGLKyHpflCg5z46n0b5DbRfqDksxBLBTUpB75ypDBAO9eCUcjNwE6LCUslwTz00yyG/X9gaVtow==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -11007,9 +10981,9 @@ typescript@^3.8.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
 
-"undici@github:mcollina/undici":
+undici@mcollina/undici:
   version "0.5.0"
-  resolved "https://codeload.github.com/mcollina/undici/tar.gz/6c3d7eed592cab9c4b63d56164ecd3cc9358945a"
+  resolved "https://codeload.github.com/mcollina/undici/tar.gz/cc9fb619f3c63f1cc7de7c0a4d0323e2d7866792"
   dependencies:
     http-parser-js "^0.5.2"
 
