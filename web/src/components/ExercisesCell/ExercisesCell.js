@@ -1,5 +1,4 @@
 import { Link, routes } from '@redwoodjs/router'
-
 import Exercises from 'src/components/Exercises'
 
 export const QUERY = gql`

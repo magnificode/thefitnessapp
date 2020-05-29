@@ -4,8 +4,10 @@ import {
   FieldError,
   Label,
   TextField,
+  HiddenField,
   Submit,
 } from '@redwoodjs/web'
+import { useAuth } from '@redwoodjs/auth'
 
 const CSS = {
   label: 'block mt-6 text-gray-700 font-semibold',
@@ -21,6 +23,8 @@ const ExerciseForm = (props) => {
   const onSubmit = (data) => {
     props.onSave(data, props?.exercise?.id)
   }
+
+  const { currentUser } = useAuth()
 
   return (
     <div className="box-border text-sm -mt-4">
@@ -44,6 +48,7 @@ const ExerciseForm = (props) => {
           errorClassName={CSS.inputError}
           validation={{ required: true }}
         />
+        <HiddenField name="creatorId" defaultValue={currentUser.id} />
         <FieldError name="name" className={CSS.errorMessage} />
 
         <div className="mt-8 text-center">

@@ -1,0 +1,52 @@
+model Day {
+  createdAt DateTime        @default(now())
+  id        Int             @default(autoincrement()) @id
+  name      String
+  routineId Int
+  routine   Routine         @relation(fields: [routineId], references: [id])
+  exercises ExerciseToDay[] @relation("DayTo_ExerciseToDay")
+}
+
+model Exercise {
+  createdAt DateTime        @default(now())
+  creatorId Int
+  id        Int             @default(autoincrement()) @id
+  name      String
+  user      User            @relation(fields: [creatorId], references: [id])
+  days      ExerciseToDay[] @relation("ExerciseTo_ExerciseToDay")
+}
+
+model Profile {
+  id     Int  @default(autoincrement()) @id
+  userId Int  @unique
+  user   User @relation(fields: [userId], references: [id])
+}
+
+model Routine {
+  createdAt DateTime @default(now())
+  creatorId Int
+  id        Int      @default(autoincrement()) @id
+  name      String
+  user      User     @relation(fields: [creatorId], references: [id])
+  days      Day[]
+}
+
+model User {
+  email     String     @unique
+  id        Int        @default(autoincrement()) @id
+  name      String?
+  exercises Exercise[]
+  profile   Profile?
+  routines  Routine[]
+}
+
+model ExerciseToDay {
+  A        Int
+  B        Int
+  exercise Exercise @relation("ExerciseTo_ExerciseToDay", fields: [A], references: [id])
+  day      Day      @relation("DayTo_ExerciseToDay", fields: [B], references: [id])
+
+  @@index([B], name: "_ExerciseToDay_B_index")
+  @@map("_ExerciseToDay")
+  @@unique([A, B], name: "_ExerciseToDay_AB_unique")
+}

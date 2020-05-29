@@ -15,4 +15,5 @@ model Exercise {
   createdAt DateTime @default(now())
   id        Int      @default(autoincrement()) @id
   name      String
+  creatorId String
 }

@@ -11,11 +11,14 @@ const CREATE_EXERCISE_MUTATION = gql`
 `
 
 const NewExercise = () => {
-  const [createExercise, { loading, error }] = useMutation(CREATE_EXERCISE_MUTATION, {
-    onCompleted: () => {
-      navigate(routes.exercises())
-    },
-  })
+  const [createExercise, { loading, error }] = useMutation(
+    CREATE_EXERCISE_MUTATION,
+    {
+      onCompleted: () => {
+        navigate(routes.exercises())
+      },
+    }
+  )
 
   const onSave = (input) => {
     createExercise({ variables: { input } })

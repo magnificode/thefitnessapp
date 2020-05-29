@@ -108,6 +108,13 @@
       "field": "name",
       "type": "String",
       "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Exercise",
+      "field": "creatorId",
+      "type": "String",
+      "arity": "Required"
     }
   ]
 }

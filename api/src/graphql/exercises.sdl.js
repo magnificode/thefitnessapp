@@ -3,15 +3,17 @@ export const schema = gql`
     createdAt: DateTime!
     id: Int!
     name: String!
+    creatorId: String!
   }
 
   type Query {
     exercises: [Exercise!]!
-    exercise(id: Int!): Exercise!
+    exercise(id: Int!): Exercise
   }
 
   input CreateExerciseInput {
     name: String!
+    creatorId: String!
   }
 
   input UpdateExerciseInput {

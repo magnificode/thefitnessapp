@@ -47,6 +47,10 @@ const Exercise = ({ exercise }) => {
               <td className="font-semibold p-3 text-right md:w-1/5">name</td>
               <td className="p-3">{exercise.name}</td>
             </tr>
+            <tr className="odd:bg-gray-100 even:bg-white border-t">
+              <td className="font-semibold p-3 text-right md:w-1/5">name</td>
+              <td className="p-3">{exercise.creatorId}</td>
+            </tr>
           </tbody>
         </table>
       </div>
